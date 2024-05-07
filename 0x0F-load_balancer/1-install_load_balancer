@@ -41,14 +41,14 @@ frontend myfrontend
 backend webservers
 	option h1-case-adjust-bogus-server
 	balance roundrobin
-	server 531607-web-01 100.26.136.10:80 check
-	server 531607-web-02 54.236.52.202:80 check
+	server 476489-web-01 52.204.77.251:80 check
+	server 476489-web-02 100.26.17.117:80 check
 "
 
-echo "$config" | sudo tee -a /etc/haproxy/haproxy.cfg
+echo "$config" >> /etc/haproxy/haproxy.cfg
 
 # Ensure haproxy can be managed by an init script
-echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+echo "ENABLED=1" >> /etc/default/haproxy
 
 # Restart haproxy
 sudo service haproxy restart
