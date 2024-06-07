@@ -67,4 +67,4 @@
 ---
 
 ![Load Balancer Meme](https://miro.medium.com/v2/resize:fit:1000/1*H3U0Gud5ztpVTmkuVTwPoA.jpeg)  
-*When servers play hide and seek, but we’re always IT.*
+*When load balancers cause issues, but we’re always IT.*
